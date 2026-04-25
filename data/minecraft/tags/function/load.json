@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["sg:triggers/load"]
+  "values": ["sg:load"]
 }
