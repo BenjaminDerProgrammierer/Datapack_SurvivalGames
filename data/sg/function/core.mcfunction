@@ -1,4 +1,3 @@
-
 # State definition
 # State 0 - lobby state
 # State 1 - prepare game state
@@ -11,7 +10,6 @@
 # Moderator - access to executing signs
 # Winner - last player that won the game
 # InGame - determinds if a player is in game or out of game
-# HasLoggedIn - is given to all users after they login for the first time
 # Movable - player is allowed to leave lobby (without being teleported back)
 
 # Take care of leavers

@@ -1,6 +1,5 @@
+# Ran if the pack is not ready yet.
+
 gamemode adventure @a[gamemode=survival]
-
-# Load chunk 0 0
 forceload add 0 0
-
-title @a actionbar [{"text": "Run ", "color": "green"},{"text":"/function sg:triggers/init", "color": "yellow", "bold": true},{"text":" to setup the pack", "color": "green"}]
+title @a actionbar [{"color":"green","text":"Run "},{"bold":true,"color":"yellow","text":"/function sg:init"},{"color":"green","text":" to set up the pack"}]

@@ -90,7 +90,7 @@ scoreboard players set #game FallDamage 1
 scoreboard players set #game RandTeams 0
 scoreboard players set #game DoInsomnia 0
 scoreboard players set #game AllowShield 0
-scoreboard players set #game PackInstantiated 2
+scoreboard players set #game PackReady 2
 scoreboard players set #game LootChests 0
 
 # Set default map size

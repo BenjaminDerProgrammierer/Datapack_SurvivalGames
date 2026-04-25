@@ -1,7 +1,5 @@
-# Introduce variable to keep track if the pack has been instantiated or not
+# If no Anchor is present, add a scoreboard to check for pack readiness. If there is an anchor, set pack readiness to 1, otherwise set it to 0.
 
-# Only instantiate if there is no anchor (game is not initialized)
-execute unless entity @e[type=minecraft:armor_stand,name=Anchor] run scoreboard objectives add PackInstantiated dummy
-execute unless entity @e[type=minecraft:armor_stand,name=Anchor] run scoreboard players set #game PackInstantiated 0
-
-execute as @e[type=minecraft:armor_stand,name=Anchor] run scoreboard players set #game PackInstantiated 2
+execute unless entity @e[type=minecraft:armor_stand,name=Anchor] run scoreboard objectives add PackReady dummy
+execute unless entity @e[type=minecraft:armor_stand,name=Anchor] run scoreboard players set #game PackReady 0
+execute if entity @e[type=minecraft:armor_stand,name=Anchor] run scoreboard players set #game PackReady 1
