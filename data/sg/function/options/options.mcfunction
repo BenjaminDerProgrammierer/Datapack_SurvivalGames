@@ -22,22 +22,22 @@ execute as @a[scores={Trig_ChangeDiff=1..}] run scoreboard players set @s Trig_C
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_NoCoords
 execute if score #game GameState matches 0 as @a[scores={Trig_NoCoords=1..}] run scoreboard players add #game NoCoords 1
 execute if score #game GameState matches 0 if score #game NoCoords matches 2.. run scoreboard players set #game NoCoords 0
-execute if score #game GameState matches 0 as @a[scores={Trig_NoCoords=1..}] if score #game NoCoords matches 0 run gamerule reducedDebugInfo true
-execute if score #game GameState matches 0 as @a[scores={Trig_NoCoords=1..}] if score #game NoCoords matches 1 run gamerule reducedDebugInfo false
+execute if score #game GameState matches 0 as @a[scores={Trig_NoCoords=1..}] if score #game NoCoords matches 0 run gamerule reduced_debug_info true
+execute if score #game GameState matches 0 as @a[scores={Trig_NoCoords=1..}] if score #game NoCoords matches 1 run gamerule reduced_debug_info false
 execute as @a[scores={Trig_NoCoords=1..}] run scoreboard players set @s Trig_NoCoords 0
 ###################### DeathMsg ######################
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_DeathMsg
 execute if score #game GameState matches 0 as @a[scores={Trig_DeathMsg=1..}] run scoreboard players add #game DeathMsg 1
 execute if score #game GameState matches 0 if score #game DeathMsg matches 2.. run scoreboard players set #game DeathMsg 0
-execute if score #game GameState matches 0 as @a[scores={Trig_DeathMsg=1..}] if score #game DeathMsg matches 0 run gamerule showDeathMessages false
-execute if score #game GameState matches 0 as @a[scores={Trig_DeathMsg=1..}] if score #game DeathMsg matches 1 run gamerule showDeathMessages true
+execute if score #game GameState matches 0 as @a[scores={Trig_DeathMsg=1..}] if score #game DeathMsg matches 0 run gamerule show_death_messages false
+execute if score #game GameState matches 0 as @a[scores={Trig_DeathMsg=1..}] if score #game DeathMsg matches 1 run gamerule show_death_messages true
 execute as @a[scores={Trig_DeathMsg=1..}] run scoreboard players set @s Trig_DeathMsg 0
 ###################### ShowPrgress ######################
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_ShowPrgress
 execute if score #game GameState matches 0 as @a[scores={Trig_ShowPrgress=1..}] run scoreboard players add #game ShowPrgress 1
 execute if score #game GameState matches 0 if score #game ShowPrgress matches 2.. run scoreboard players set #game ShowPrgress 0
-execute if score #game GameState matches 0 as @a[scores={Trig_ShowPrgress=1..}] if score #game ShowPrgress matches 0 run gamerule announceAdvancements false
-execute if score #game GameState matches 0 as @a[scores={Trig_ShowPrgress=1..}] if score #game ShowPrgress matches 1 run gamerule announceAdvancements true
+execute if score #game GameState matches 0 as @a[scores={Trig_ShowPrgress=1..}] if score #game ShowPrgress matches 0 run gamerule show_advancement_messages false
+execute if score #game GameState matches 0 as @a[scores={Trig_ShowPrgress=1..}] if score #game ShowPrgress matches 1 run gamerule show_advancement_messages true
 execute as @a[scores={Trig_ShowPrgress=1..}] run scoreboard players set @s Trig_ShowPrgress 0
 ###################### Move map ######################
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_NewMap
@@ -48,15 +48,15 @@ execute as @a[scores={Trig_NewMap=1..}] run scoreboard players set @s Trig_NewMa
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_UHCMode
 execute if score #game GameState matches 0 as @a[scores={Trig_UHCMode=1..}] run scoreboard players add #game UHCMode 1
 execute if score #game GameState matches 0 if score #game UHCMode matches 2.. run scoreboard players set #game UHCMode 0
-execute if score #game GameState matches 0 as @a[scores={Trig_UHCMode=1..}] if score #game UHCMode matches 0 run gamerule naturalRegeneration true
-execute if score #game GameState matches 0 as @a[scores={Trig_UHCMode=1..}] if score #game UHCMode matches 1 run gamerule naturalRegeneration false
+execute if score #game GameState matches 0 as @a[scores={Trig_UHCMode=1..}] if score #game UHCMode matches 0 run gamerule natural_health_regeneration true
+execute if score #game GameState matches 0 as @a[scores={Trig_UHCMode=1..}] if score #game UHCMode matches 1 run gamerule natural_health_regeneration false
 execute as @a[scores={Trig_UHCMode=1..}] run scoreboard players set @s Trig_UHCMode 0
 ###################### FallDamage ######################
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_FallDamage
 execute if score #game GameState matches 0 as @a[scores={Trig_FallDamage=1..}] run scoreboard players add #game FallDamage 1
 execute if score #game GameState matches 0 if score #game FallDamage matches 2.. run scoreboard players set #game FallDamage 0
-execute if score #game GameState matches 0 as @a[scores={Trig_FallDamage=1..}] if score #game FallDamage matches 0 run gamerule fallDamage false
-execute if score #game GameState matches 0 as @a[scores={Trig_FallDamage=1..}] if score #game FallDamage matches 1 run gamerule fallDamage true
+execute if score #game GameState matches 0 as @a[scores={Trig_FallDamage=1..}] if score #game FallDamage matches 0 run gamerule fall_damage false
+execute if score #game GameState matches 0 as @a[scores={Trig_FallDamage=1..}] if score #game FallDamage matches 1 run gamerule fall_damage true
 execute as @a[scores={Trig_FallDamage=1..}] run scoreboard players set @s Trig_FallDamage 0
 ###################### RandTeams ######################
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_RandTeams
@@ -69,8 +69,8 @@ execute as @a[scores={Trig_RandTeams=1..}] run scoreboard players set @s Trig_Ra
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_DoInsomnia
 execute if score #game GameState matches 0 as @a[scores={Trig_DoInsomnia=1..}] run scoreboard players add #game DoInsomnia 1
 execute if score #game GameState matches 0 if score #game DoInsomnia matches 2.. run scoreboard players set #game DoInsomnia 0
-execute if score #game GameState matches 0 as @a[scores={Trig_DoInsomnia=1..}] if score #game DoInsomnia matches 0 run gamerule doInsomnia false
-execute if score #game GameState matches 0 as @a[scores={Trig_DoInsomnia=1..}] if score #game DoInsomnia matches 1 run gamerule doInsomnia true
+execute if score #game GameState matches 0 as @a[scores={Trig_DoInsomnia=1..}] if score #game DoInsomnia matches 0 run gamerule spawn_phantoms false
+execute if score #game GameState matches 0 as @a[scores={Trig_DoInsomnia=1..}] if score #game DoInsomnia matches 1 run gamerule spawn_phantoms true
 execute as @a[scores={Trig_DoInsomnia=1..}] run scoreboard players set @s Trig_DoInsomnia 0
 ###################### MapSize ######################
 execute if score #game GameState matches 0 run scoreboard players enable @a[tag=Moderator] Trig_MapSize

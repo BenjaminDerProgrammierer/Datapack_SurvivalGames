@@ -2,7 +2,7 @@
 
 worldborder set 10000 0
 
-gamerule doTileDrops false
+gamerule block_drops false
 
 # Build lobby
 function sg:internal/buildlobby

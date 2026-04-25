@@ -26,7 +26,7 @@ scoreboard players set #game Sec_Timer 0
 scoreboard players set #game Min_Timer 0
 
 # Enable drops
-gamerule doTileDrops true
+gamerule block_drops true
 
 # Clear winner tag from players
 tag @a[tag=Winner] remove Winner

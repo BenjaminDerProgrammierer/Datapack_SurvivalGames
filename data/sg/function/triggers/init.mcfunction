@@ -8,14 +8,14 @@ tag @s add Moderator
 tellraw @s [{ "text":"You are now a moderator", "color": "gray", "italic":true }]
 
 # Game rules
-gamerule commandBlockOutput false
-gamerule doImmediateRespawn true
-gamerule showDeathMessages true
-gamerule doTileDrops false
-gamerule spectatorsGenerateChunks false
-gamerule spawnRadius 0
-gamerule doWeatherCycle false
-gamerule logAdminCommands false
+gamerule command_block_output false
+gamerule immediate_respawn true
+gamerule show_death_messages true
+gamerule block_drops false
+gamerule spectators_generate_chunks false
+gamerule respawn_radius 0
+gamerule advance_weather false
+gamerule log_admin_commands false
 
 # Setup variables
 scoreboard objectives add DisplayVariable dummy "\u00A7a\u00A7l--Hunger Games--"
@@ -72,7 +72,7 @@ scoreboard objectives setdisplay list Wins
 weather clear
 
 # Summon anchor
-summon armor_stand 0 400 0 {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Small:1b,CustomName:"{\"text\":\"Anchor\"}"}
+summon armor_stand 0 400 0 {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Small:1b,CustomName:"Anchor"}
 
 # Add teams
 team add INTERNAL_SIDEBAR
